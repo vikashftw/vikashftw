@@ -1,8 +1,8 @@
 <!-- Stats -->
 <div align="center">
-  <img src="https://raw.githubusercontent.com/vikashftw/vikashftw/stats-output/stats-output/stats.svg" width="55%" /></br>
-  <img src="https://raw.githubusercontent.com/vikashftw/vikashftw/stats-output/stats-output/streak.svg" width="50%" />
-  <img src="https://raw.githubusercontent.com/vikashftw/vikashftw/stats-output/stats-output/langs.svg" width="36%" /></br>
+  <img src="https://raw.githubusercontent.com/vikashftw/vikashftw/stats-output/stats.svg" width="55%" /></br>
+  <img src="https://raw.githubusercontent.com/vikashftw/vikashftw/stats-output/streak.svg" width="50%" />
+  <img src="https://raw.githubusercontent.com/vikashftw/vikashftw/stats-output/langs.svg" width="36%" /></br>
 </div>
 
 
