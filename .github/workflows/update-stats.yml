@@ -1,0 +1,48 @@
+name: Update Stats
+
+on:
+  schedule:
+    - cron: '0 */6 * * *' # Run every 6 hours
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  generate-stats:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Install Required Tools
+        run: sudo apt-get install -y curl
+
+      - name: Fetch Stats and Generate SVGs
+        run: |
+          # Fetch the data
+          curl -o stats.svg "https://vikashstats.vercel.app/api?&username=vikashftw&theme=aura&hide_border=true&include_all_commits=true&count_private=true"
+          curl -o streak.svg "https://github-readme-streak-stats.herokuapp.com/?user=vikashftw&theme=aura&hide_border=true"
+          curl -o langs.svg "https://vikashstats.vercel.app/api/top-langs/?username=vikashftw&theme=aura&hide_border=true&include_all_commits=true&count_private=true&layout=compact&hide=makefile"
+
+          # Create the stats-output directory if it doesn't exist
+          mkdir -p stats-output
+
+          # Move the SVG files to the stats-output directory
+          mv stats.svg stats-output/
+          mv streak.svg stats-output/
+          mv langs.svg stats-output/
+
+      - name: Commit and Push Updates
+        run: |
+          # Configure Git
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+
+          # Switch to or create the stats-output branch
+          git checkout -B stats-output
+
+          # Add and commit changes
+          git add stats-output/*.svg
+          git commit -m "Updated stats SVGs"
+
+          # Push changes
+          git push origin stats-output --force
