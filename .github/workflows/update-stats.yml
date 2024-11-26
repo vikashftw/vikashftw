@@ -23,14 +23,6 @@ jobs:
           curl -o streak.svg "https://github-readme-streak-stats.herokuapp.com/?user=vikashftw&theme=aura&hide_border=true"
           curl -o langs.svg "https://vikashstats.vercel.app/api/top-langs/?username=vikashftw&theme=aura&hide_border=true&include_all_commits=true&count_private=true&layout=compact&hide=makefile"
 
-          # Create the stats-output directory if it doesn't exist
-          mkdir -p stats-output
-
-          # Move the SVG files to the stats-output directory
-          mv stats.svg stats-output/
-          mv streak.svg stats-output/
-          mv langs.svg stats-output/
-
       - name: Commit and Push Updates
         run: |
           # Configure Git
@@ -40,8 +32,10 @@ jobs:
           # Switch to or create the stats-output branch
           git checkout -B stats-output
 
-          # Add and commit changes
-          git add stats-output/*.svg
+          # Add only the dist directory
+          git add *.svg
+
+          # Commit changes
           git commit -m "Updated stats SVGs"
 
           # Push changes
