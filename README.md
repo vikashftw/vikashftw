@@ -1,7 +1,7 @@
 <!-- Stats -->
 <div align="center">
-  <img src="https://vikashstats.vercel.app/api?username=vikashftw&theme=aura&hide_border=true&include_all_commits=true&count_private=true" width="55%" /></br>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=vikashftw&theme=aura&hide_border=true" width="50%" />
+  <img src="https://vikashstats.vercel.app/api?cache=no&username=vikashftw&theme=aura&hide_border=true&include_all_commits=true&count_private=true" width="55%" /></br>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?cache=no&user=vikashftw&theme=aura&hide_border=true" width="50%" />
   <img src="https://vikashstats.vercel.app/api/top-langs/?username=vikashftw&theme=aura&hide_border=true&include_all_commits=true&count_private=true&layout=compact&hide=makefile" width="36%" /> </br>
 </div>
 
