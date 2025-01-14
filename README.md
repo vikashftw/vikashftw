@@ -1,8 +1,8 @@
 <!-- Stats -->
 <div align="center">
-  <img src="https://vikashstats.vercel.app/api?username=vikashftw&theme=aura&hide_border=true&include_all_commits=true&count_private=true&v=1736835719" width="55%" /> <br />
-  <img src="https://streak-stats.demolab.com/?user=vikashftw&theme=aura&hide_border=true&v=1736835719" width="50%" />
-  <img src="https://vikashstats.vercel.app/api/top-langs/?username=vikashftw&theme=aura&hide_border=true&include_all_commits=true&count_private=true&layout=compact&hide=makefile&v=1736835719" width="36%" /> <br />
+  <img src="https://vikashstats.vercel.app/api?username=vikashftw&theme=aura&hide_border=true&include_all_commits=true&count_private=true&v=1736857907" width="55%" /> <br />
+  <img src="https://streak-stats.demolab.com/?user=vikashftw&theme=aura&hide_border=true&v=1736857907" width="50%" />
+  <img src="https://vikashstats.vercel.app/api/top-langs/?username=vikashftw&theme=aura&hide_border=true&include_all_commits=true&count_private=true&layout=compact&hide=makefile&v=1736857907" width="36%" /> <br />
 </div>
 
 
