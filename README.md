@@ -36,5 +36,5 @@
 <!-- Counter -->
 <div align="center">
   
-  [![](https://visitcount.itsvg.in/api?id=vikashftw&icon=10&color=6)](https://visitcount.itsvg.in)
+  ![](https://komarev.com/ghpvc/?username=vikashftw&abbreviated=true)
 </div>
